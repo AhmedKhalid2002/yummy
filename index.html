@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <section class="spinner  justify-content-center align-items-center" id="spinner">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </section>
+    <nav class="position-fixed top-0 bottom-0 z-3 ">
+        <div class="nav_groupe text-white d-flex">
+            <div class="nav_links d-flex flex-column justify-content-between">
+                <ul class="nav_link">
+                    <li><a href="#search" class="text-white">Search</a></li>
+                    <li ><a href="#categories" class="text-white">Categories</a></li>
+                    <li><a href="#area" class="text-white">Area</a></li>
+                    <li><a href="#ingredients" class="text-white">Ingredients</a></li>
+                    <li><a href="#contact" class="text-white">Contact Us</a></li>
+                </ul>
+                <div class="social_link ">
+                    <ul class="d-flex justify-content-around align-items-center p-0">
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-solid fa-globe"></i></li>
+                    </ul>
+                    <p class="p-2">Copyright Â © 2023 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="nav_yummy bg-white d-flex flex-column justify-content-between align-items-center p-3">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div class="icon text-black">
+                    <i class="fa-solid fa-bars open d-none"></i>
+                    <i class="fa-solid fa-xmark d-block close"></i>
+                </div>
+                <div class="share text-black d-flex flex-column">
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-share-alt mt-1"></i>
+                </div>
+            </div>
+        </div>
+    </nav> 
+    <main class="py-5">
+        <div class="search mt-5 d-none p-3" id="search" data-sec>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control bg-transparent" placeholder="search by name" id="searchName">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control bg-transparent" placeholder="search by first letter" id="searchFirstLetter">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category d-none" id="categories" data-sec>
+            <div class="container">
+                <div class="row g-3 " id="category_row">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="area d-none" id="area" data-sec>
+            <div class="container">
+                <div class="row g-3 " id="area_row">
+                </div>
+            </div>>
+        </div>
+        <div class="ingredients d-none" id="ingredients" data-sec>
+            <div class="container">
+                <div class="row g-3 " id="ingredients_row">
+                </div>
+            </div>
+        </div>
+        <div class="contact d-none" id="contact" data-sec>
+            <div class="container vh-100 d-flex justify-content-center align-items-center">
+                <div class="row w-75 g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control " placeholder="enter your name" id="inputName">
+                        <p class="alert alert-danger mt-2 d-none">Special characters and numbers not allowed</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control " placeholder="enter your email" id="inputEmail">
+                        <p class="alert alert-danger mt-2 d-none">Email not valid *exemple@yyy.zzz</p>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="tel" class="form-control " placeholder="enter your phone" id="inputPhone">
+                        <p class="alert alert-danger mt-2 d-none">Enter valid Phone Number</p>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="number" class="form-control " placeholder="enter your Age" id="inputAge">
+                        <p class="alert alert-danger mt-2 d-none">Enter valid age</p>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="password" class="form-control " placeholder="enter your password" id="inputPassword">
+                        <p class="alert alert-danger mt-2 d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <input type="password" class="form-control " placeholder="Repassword"id="inputRePassword">
+                        <p class="alert alert-danger mt-2 d-none">Enter valid repassword</p>
+                    </div>
+                    <div class="col-md-1 m-auto">
+                        <button class="btn btn-outline-danger mt-3 " disabled id="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="showMeal">
+            <div class="container">
+                <div class="row g-4" id="Data">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
